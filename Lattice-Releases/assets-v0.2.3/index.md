@@ -20,10 +20,5 @@ layout: default
 
 ## Notes
 
-
-
-- Executables are provided as-is; see [LICENSE](https://lattice-technologies.com/Lattice-Releases/LICENSE) for terms.
-
+- Executables are provided as-is; see [LICENSE](https://lattice-technologies.com/LICENSE) for terms.
 - Source code and release notes: [GitHub Release](https://github.com/blessia-blessini/lattice/releases/tag/v0.2.3)
-
-- Report issues: [blessia AT blessini.com](mailto:blessia@blessini.com)
