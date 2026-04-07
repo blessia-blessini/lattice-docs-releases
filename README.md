@@ -1,4 +1,4 @@
-# Lattice 
+# Lattice Releases and Documents Repository
   2026 Copyright (C) 2026 Owner of blessini.com (a.k.a **_Blessia_**)
 
 ## Repository Purpose
