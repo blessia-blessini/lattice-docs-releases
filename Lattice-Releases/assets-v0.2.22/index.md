@@ -26,10 +26,5 @@ layout: default
 
 ## Notes
 
-
-
 - [Full release on GitHub](https://github.com/blessia-blessini/lattice/releases/tag/v0.2.22)
-
-- Executables are provided as-is; see as download [LICENSE](https://lattice-technologies.com/LICENSE) for terms.
-
-LICENCE IS: [GNU AFFERO GENERAL PUBLIC LICENSE (AGPL) v3.0](https://github.com/blessia-blessini/lattice-docs-releases/blob/main/LICENSE).
+- DUAL LICENCE - FOR TERMS DETAILS SEE [readme section Licencing ](https://github.com/blessia-blessini/lattice#licensing).
