@@ -32,4 +32,4 @@ layout: default
 
 - Executables are provided as-is; see as download [LICENSE](https://lattice-technologies.com/LICENSE) for terms.
 
-LICENCE IS: GNU AFFERO GENERAL PUBLIC LICENSE.
+LICENCE IS: [GNU AFFERO GENERAL PUBLIC LICENSE (AGPL) v3.0](https://github.com/blessia-blessini/lattice-docs-releases/blob/main/LICENSE).
