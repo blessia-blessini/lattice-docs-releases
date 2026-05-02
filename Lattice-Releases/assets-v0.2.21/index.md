@@ -7,6 +7,15 @@ layout: default
 
 **Released:** 2026-05-01 21:51 UTC
 
+## Whats new
+
+### Changed
+  - The zoom-in/out with mouse `CTRL + Mouse-Scroll` (macOS: `⌘ + Mouse-Scroll`) works now.
+  - Update dependencies and version numbers, thus fixed #15
+  - Automated Changelog and Release Notes
+### Fixed
+  - Issue #15:[Revisit Dependabot Alert #16: glib VariantStrIter unsoundness (May 2026)](https://github.com/blessia-blessini/lattice/issues/15)
+
 ## Downloads
 
 | File | Size |
@@ -20,10 +29,5 @@ layout: default
 
 ## Notes
 
-
-
 - [Full release on GitHub](https://github.com/blessia-blessini/lattice/releases/tag/v0.2.21)
-
-- Executables are provided as-is; see [LICENSE](https://lattice-technologies.com/LICENSE) for terms.
-
-
+- DUAL LICENCE - FOR TERMS DETAILS SEE [readme section Licencing ](https://github.com/blessia-blessini/lattice#licensing).
