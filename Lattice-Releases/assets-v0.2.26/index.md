@@ -32,9 +32,7 @@ See [lattice-technologies.com](https://lattice-technologies.com/Lattice-Releases
 
 
 ## Test Coverage
-
-
-
-- [View HTML coverage report](https://lattice-technologies.com/Lattice-Releases/assets-v0.2.26/coverage/)
+ - [View HTML coverage report FRINTEND](https://lattice-technologies.com/Lattice-Releases/assets-v0.2.26/coverage/coverage/)
+ - [View HTML coverage report BACKEND ](https://lattice-technologies.com/Lattice-Releases/assets-v0.2.26/coverage/src-tauri/target/llvm-cov/html/)
 
 
