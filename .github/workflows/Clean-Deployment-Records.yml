@@ -1,0 +1,97 @@
+#################################################
+# File: github\workflows\Clean-Deployment-Records.yml
+# Copyright (c): 2026 - Blessia owner of blessini.com
+# License: MIT
+#################################################
+name: Clean-Deployment-Records
+
+permissions:
+  contents: write      # needed for force-push (squash)
+  deployments: write   # needed for deleting deployment records
+  actions: write       # needed for deleting workflow runs
+
+on:
+  schedule:
+    - cron: '0 23 * * 1'  # Every Monday at 23:00 UTC
+  workflow_dispatch:
+
+jobs:
+  clean-deployments:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Keep only the last 3 action runs
+        shell: bash
+        env:
+          OWNER_REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          KEEP=3
+          ALL_RUN_IDS=$(gh api "repos/$OWNER_REPO/actions/runs" --paginate --jq '.workflow_runs[].id')
+
+          count=0
+          for id in $ALL_RUN_IDS; do
+            count=$((count + 1))
+            if [ $count -le $KEEP ]; then
+              echo "Keeping run $id"
+              continue
+            fi
+            gh api -X DELETE "repos/$OWNER_REPO/actions/runs/$id"
+            echo "Deleted run $id"
+          done
+
+      - name: Keep only the latest deployment record
+        shell: bash
+        env:
+          OWNER_REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ALL_IDS=$(gh api repos/$OWNER_REPO/deployments --jq '.[].id')
+
+          FIRST=true
+          for id in $ALL_IDS; do
+            if $FIRST; then
+              echo "Keeping latest deployment: $id"
+              FIRST=false
+              continue
+            fi
+            gh api -X POST repos/$OWNER_REPO/deployments/$id/statuses --field state=inactive
+            gh api -X DELETE repos/$OWNER_REPO/deployments/$id
+            echo "Deleted $id"
+          done
+
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Squash history — keep last 3 commits, collapse the rest into one
+        shell: bash
+        run: |
+          TOTAL=$(git rev-list --count HEAD)
+          echo "Total commits: $TOTAL"
+
+          if [ "$TOTAL" -le 3 ]; then
+            echo "Only $TOTAL commits — nothing to squash, skipping."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          BRANCH=$(git rev-parse --abbrev-ref HEAD)
+
+          # Create a new parentless root commit using the tree state at HEAD~3
+          # (this collapses all history older than the 3 commits we keep)
+          NEW_ROOT=$(git commit-tree HEAD~3^{tree} \
+            -m "chore: squashed history up to $(date -u '+%Y-%m-%d')")
+
+          echo "New root commit: $NEW_ROOT"
+
+          # Replay the last 3 commits on top of the new root
+          git rebase --onto $NEW_ROOT HEAD~3
+
+          # Force push — rewrites history on remote
+          git push --force-with-lease origin $BRANCH
+
+          echo "Done — repo now has 4 commits: 1 squashed root + 3 latest."

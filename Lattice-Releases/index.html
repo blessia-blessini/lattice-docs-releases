@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lattice — Releases</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg:         #ffffff;
+      --fg:         #212121;
+      --muted:      #757575;
+      --border:     #e0e0e0;
+      --accent:     #1565c0;
+      --hover:      #f5f5f5;
+      --code-bg:    #f5f5f5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:      #121212;
+        --fg:      #e0e0e0;
+        --muted:   #9e9e9e;
+        --border:  #2e2e2e;
+        --accent:  #90caf9;
+        --hover:   #1e1e1e;
+        --code-bg: #1a1a1a;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Roboto, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+      line-height: 1.6;
+    }
+
+    /* ── page header ── */
+    .page-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 32px;
+      gap: 16px;
+    }
+    .page-header h1 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: .01em;
+    }
+    .page-header p {
+      font-size: .9rem;
+      color: var(--muted);
+    }
+
+    select {
+      background: var(--bg);
+      color: var(--fg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 6px 10px;
+      font-size: .875rem;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    select:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+    /* ── markdown content ── */
+    #content h1 { font-size: 1.4rem; font-weight: 500; margin: 0 0 4px; }
+    #content h2 {
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+      margin: 28px 0 12px;
+    }
+    #content h3 { font-size: .95rem; font-weight: 500; margin: 20px 0 8px; }
+
+    #content p  { margin: 6px 0; color: var(--muted); font-size: .9rem; }
+    #content ul { margin: 6px 0 6px 20px; font-size: .9rem; color: var(--muted); }
+    #content li { margin: 2px 0; }
+    #content a  { color: var(--accent); text-decoration: none; }
+    #content a:hover { text-decoration: underline; }
+
+    /* ── downloads table ── */
+    #content table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+      margin: 8px 0 16px;
+    }
+    #content th {
+      text-align: left;
+      padding: 6px 12px;
+      border-bottom: 2px solid var(--border);
+      font-weight: 500;
+      font-size: .7rem;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: var(--muted);
+    }
+    #content th:last-child { text-align: right; }
+    #content td {
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+    }
+    #content td:last-child { text-align: right; color: var(--muted); }
+    #content tr:last-child td { border-bottom: none; }
+    #content tbody tr:hover td { background: var(--hover); }
+
+    /* ── material icon inside table cell ── */
+    .material-icons {
+      font-size: 18px;
+      vertical-align: middle;
+      margin-right: 6px;
+      color: var(--muted);
+      user-select: none;
+    }
+
+    /* ── status / error ── */
+    #status {
+      padding: 60px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    /* ── footer ── */
+    footer {
+      margin-top: 56px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: .8rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <div class="page-header">
+    <div>
+      <h1>Lattice</h1>
+      <p>The Portable and Standard Markdown Editor</p>
+    </div>
+    <select id="versionSelect" hidden aria-label="Release version"></select>
+  </div>
+
+  <div id="status">Loading releases&hellip;</div>
+  <div id="content" hidden></div>
+
+  <footer>
+    Copyright &copy; 2026 Blessia Blessini &mdash;
+    <a href="https://github.com/blessia-blessini">GitHub</a> &mdash;
+    <a href="https://github.com/blessia-blessini/lattice-docs-releases/blob/main/README.md">License</a>
+  </footer>
+
+  <script>
+    const REPO = 'blessia-blessini/lattice-docs-releases';
+    const API  = `https://api.github.com/repos/${REPO}/contents/Lattice-Releases`;
+    const RAW  = `https://raw.githubusercontent.com/${REPO}/main/Lattice-Releases`;
+
+    function semverCmp(a, b) {
+      const parse = s => {
+        const [maj, min, patch = '0'] = s.replace(/^assets-v/, '').split('.');
+        const patNum = parseInt(patch, 10);
+        const patSuf = patch.slice(String(patNum).length); // e.g. 'a' from '39a'
+        return [Number(maj), Number(min), patNum, patSuf];
+      };
+      const [aMaj, aMin, aPat, aSuf] = parse(a);
+      const [bMaj, bMin, bPat, bSuf] = parse(b);
+      if (bMaj !== aMaj) return bMaj - aMaj;
+      if (bMin !== aMin) return bMin - aMin;
+      if (bPat !== aPat) return bPat - aPat;
+      // Same numeric patch: letter suffix is a newer hot-patch (39a > 39)
+      if (aSuf === bSuf) return 0;
+      if (aSuf === '') return 1;  // b has suffix → b is newer
+      if (bSuf === '') return -1; // a has suffix → a is newer
+      return bSuf.localeCompare(aSuf);
+    }
+
+    const selectEl = document.getElementById('versionSelect');
+    const statusEl = document.getElementById('status');
+    const contentEl = document.getElementById('content');
+
+    marked.use({ breaks: true, gfm: true });
+
+    function injectLogo(svgText) {
+      const h1 = contentEl.querySelector('h1');
+      if (!h1) return;
+      const logoBox = document.createElement('div');
+      logoBox.style.cssText = 'float:right;width:90px;height:90px;margin:0 0 8px 16px;';
+      logoBox.innerHTML = svgText;
+      const svg = logoBox.querySelector('svg');
+      if (svg) { svg.setAttribute('width', '90'); svg.setAttribute('height', '90'); }
+      h1.parentNode.insertBefore(logoBox, h1);
+    }
+
+    async function loadRelease(folder) {
+      contentEl.hidden = true;
+      statusEl.hidden = false;
+      statusEl.textContent = `Loading ${folder.replace('assets-', '')}…`;
+
+      const [mdRes, svgRes] = await Promise.all([
+        fetch(`${RAW}/${folder}/index.md`),
+        fetch(`${RAW}/${folder}/lattice.svg`),
+      ]);
+      if (!mdRes.ok) throw new Error(`Could not fetch ${folder}/index.md (${mdRes.status})`);
+      const md = await mdRes.text();
+
+      contentEl.innerHTML = marked.parse(md);
+      if (svgRes.ok) injectLogo(await svgRes.text());
+      contentEl.hidden = false;
+      statusEl.hidden = true;
+    }
+
+    fetch(API)
+      .then(r => { if (!r.ok) throw new Error(`GitHub API ${r.status}`); return r.json(); })
+      .then(items => {
+        const releases = items
+          .filter(i => i.type === 'dir' && /^assets-v\d+\.\d+\.\d+[a-zA-Z]*$/.test(i.name))
+          .sort((a, b) => semverCmp(a.name, b.name))
+          .map(i => i.name);
+
+        if (!releases.length) throw new Error('No release folders found yet.');
+
+        releases.forEach((name, idx) => {
+          const opt = document.createElement('option');
+          opt.value = name;
+          opt.textContent = name.replace('assets-', '') + (idx === 0 ? ' (latest)' : '');
+          selectEl.appendChild(opt);
+        });
+        selectEl.hidden = false;
+        selectEl.addEventListener('change', () => loadRelease(selectEl.value).catch(showError));
+
+        return loadRelease(releases[0]);
+      })
+      .catch(showError);
+
+    function showError(err) {
+      statusEl.hidden = false;
+      statusEl.textContent = `Error: ${err.message}`;
+      contentEl.hidden = true;
+    }
+  </script>
+</body>
+</html>
