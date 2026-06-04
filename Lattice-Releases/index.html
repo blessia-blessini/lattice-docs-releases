@@ -36,7 +36,7 @@
       font-family: Roboto, system-ui, sans-serif;
       background: var(--bg);
       color: var(--fg);
-      max-width: 860px;
+      max-width: 80vw;
       margin: 0 auto;
       padding: 40px 24px 64px;
       line-height: 1.6;
@@ -91,6 +91,19 @@
     #content li { margin: 2px 0; }
     #content a  { color: var(--accent); text-decoration: none; }
     #content a:hover { text-decoration: underline; }
+
+    /* ── screenshots & embedded media ── */
+    #content img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+      margin: 8px 0;
+    }
+    #content iframe {
+      width: 100% !important;
+      display: block;
+    }
 
     /* ── downloads table ── */
     #content table {
