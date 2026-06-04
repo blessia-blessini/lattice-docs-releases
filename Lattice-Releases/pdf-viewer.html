@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+  pdf-viewer.html — Lattice Release Portal
+  Renders a PDF from a URL passed as the `?file=` query parameter.
+
+  Third-party: PDF.js by Mozilla Foundation, Apache License 2.0.
+  See /THIRD_PARTY_LICENSES.md for the full licence text.
+
+  Usage:
+    pdf-viewer.html?file=https%3A%2F%2Fraw.githubusercontent.com%2F...%2Fdemo.md.pdf
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF — Lattice</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #3a3a3a;
+      font-family: system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 12px;
+      min-height: 100vh;
+    }
+
+    /* ── toolbar ── */
+    #toolbar {
+      width: 100%;
+      max-width: 860px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      color: #e0e0e0;
+      font-size: 13px;
+      flex-wrap: wrap;
+    }
+    #page-count {
+      opacity: 0.7;
+    }
+    #attribution {
+      margin-left: auto;
+      font-size: 11px;
+      opacity: 0.5;
+    }
+    #attribution a { color: #90caf9; }
+
+    /* ── pages ── */
+    #pdf-pages {
+      width: 100%;
+      max-width: 860px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    canvas {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #fff;
+      border-radius: 2px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+
+    /* ── status / error ── */
+    #status {
+      color: #e0e0e0;
+      padding: 60px 20px;
+      text-align: center;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+    #status.error { color: #ef9a9a; }
+  </style>
+</head>
+<body>
+
+  <div id="toolbar">
+    <span id="page-count">Loading…</span>
+    <span id="attribution">
+      Rendered by <a href="https://mozilla.github.io/pdf.js/" target="_blank" rel="noopener">PDF.js</a>
+      (Apache&nbsp;2.0 — Mozilla Foundation)
+    </span>
+  </div>
+
+  <div id="status">Loading PDF…</div>
+  <div id="pdf-pages"></div>
+
+  <script type="module">
+    // PDF.js 4.x — Apache 2.0 — https://mozilla.github.io/pdf.js/
+    import * as pdfjsLib from
+      'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.3.136/build/pdf.min.mjs';
+
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.3.136/build/pdf.worker.min.mjs';
+
+    const statusEl   = document.getElementById('status');
+    const pagesEl    = document.getElementById('pdf-pages');
+    const pageCountEl = document.getElementById('page-count');
+
+    const params  = new URLSearchParams(location.search);
+    const fileUrl = params.get('file');
+
+    if (!fileUrl) {
+      showError('No PDF specified — add ?file=<encoded-url> to the address.');
+    } else {
+      loadPDF(decodeURIComponent(fileUrl));
+    }
+
+    async function loadPDF(url) {
+      try {
+        const loadingTask = pdfjsLib.getDocument({ url, withCredentials: false });
+        const pdf = await loadingTask.promise;
+        const total = pdf.numPages;
+
+        statusEl.hidden = true;
+        pageCountEl.textContent = `${total} page${total !== 1 ? 's' : ''}`;
+
+        // Render every page in sequence — gives a fully scrollable view
+        for (let p = 1; p <= total; p++) {
+          const page     = await pdf.getPage(p);
+          // Scale so the canvas is ~860 px wide at 96 dpi (devicePixelRatio-aware)
+          const dpr      = window.devicePixelRatio || 1;
+          const baseW    = Math.min(window.innerWidth - 24, 860);
+          const unscaled = page.getViewport({ scale: 1 });
+          const scale    = (baseW / unscaled.width) * dpr;
+          const viewport = page.getViewport({ scale });
+
+          const canvas = document.createElement('canvas');
+          canvas.width  = viewport.width;
+          canvas.height = viewport.height;
+          pagesEl.appendChild(canvas);
+
+          await page.render({
+            canvasContext: canvas.getContext('2d'),
+            viewport,
+          }).promise;
+        }
+      } catch (err) {
+        showError(`Could not load PDF: ${err.message}`);
+      }
+    }
+
+    function showError(msg) {
+      statusEl.textContent = msg;
+      statusEl.className = 'error';
+      statusEl.hidden = false;
+    }
+  </script>
+</body>
+</html>
