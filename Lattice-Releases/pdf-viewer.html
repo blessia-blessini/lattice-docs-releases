@@ -29,8 +29,7 @@
 
     /* ── toolbar ── */
     #toolbar {
-      width: 100%;
-      max-width: 860px;
+      width: 90%;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -51,8 +50,7 @@
 
     /* ── pages ── */
     #pdf-pages {
-      width: 100%;
-      max-width: 860px;
+      width: 90%;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -123,9 +121,9 @@
         // Render every page in sequence — gives a fully scrollable view
         for (let p = 1; p <= total; p++) {
           const page     = await pdf.getPage(p);
-          // Scale so the canvas is ~860 px wide at 96 dpi (devicePixelRatio-aware)
+          // Scale so the canvas fills 90% of the iframe viewport (devicePixelRatio-aware)
           const dpr      = window.devicePixelRatio || 1;
-          const baseW    = Math.min(window.innerWidth - 24, 860);
+          const baseW    = (window.innerWidth - 24) * 0.90;
           const unscaled = page.getViewport({ scale: 1 });
           const scale    = (baseW / unscaled.width) * dpr;
           const viewport = page.getViewport({ scale });
