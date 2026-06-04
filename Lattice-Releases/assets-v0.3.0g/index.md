@@ -30,7 +30,6 @@ A Markdown file — open directly in Lattice, read on GitHub, or view as HTML/PD
 
  - [GitHub (rendered)](https://github.com/blessia-blessini/lattice-docs-releases/blob/alpha-releases/Lattice-Releases/assets-v0.3.0g/docs/demo/demo.md)
  - [Raw .md](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/alpha-releases/Lattice-Releases/assets-v0.3.0g/docs/demo/demo.md)
-<iframe src="pdf-viewer.html?file=https%3A%2F%2Fraw.githubusercontent.com%2Fblessia-blessini%2Flattice-docs-releases%2Falpha-releases%2FLattice-Releases%2Fassets-v0.3.0g%2Fdocs%2Fdemo%2Fdemo.md.pdf" width="100%" height="720" style="border:none;border-radius:4px;margin:12px 0;display:block"></iframe>
+<iframe src="pdf-viewer.html?file=https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/alpha-releases/Lattice-Releases/assets-v0.3.0g/docs/demo/demo.md.pdf" width="100%" height="720" style="border:none;border-radius:4px;margin:12px 0;display:block"></iframe>
 
  - Download[Lattice-generated PDF](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/alpha-releases/Lattice-Releases/assets-v0.3.0g/docs/demo/demo.md.pdf)
-
