@@ -195,6 +195,9 @@
       border-top: 1px solid var(--border);
       font-size: .8rem;
       color: var(--muted);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     footer a { color: var(--accent); }
   </style>
@@ -206,19 +209,17 @@
       <h1>Lattice (the Markdown Editor)</h1>
       <p>The Portable and Standard Markdown Editor for Windows, MacOS and Linux</p>
     </div>
-    <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;">
-      <select id="versionSelect" hidden aria-label="Release version"></select>
-      <button id="theme-btn" aria-label="Toggle dark/light mode" title="Toggle dark/light mode"></button>
-    </div>
+    <select id="versionSelect" hidden aria-label="Release version"></select>
   </div>
 
   <div id="status">Loading releases&hellip;</div>
   <div id="content" hidden></div>
 
   <footer>
-    Copyright &copy; 2026 Blessia Blessini &mdash;
+    <span>Copyright &copy; 2026 Blessia Blessini &mdash;
     <a href="https://github.com/blessia-blessini">GitHub</a> &mdash;
-    <a href="https://github.com/blessia-blessini/lattice-docs-releases/blob/main/README.md">License</a>
+    <a href="https://github.com/blessia-blessini/lattice-docs-releases/blob/main/README.md">License</a></span>
+    <button id="theme-btn" aria-label="Toggle dark/light mode" title="Toggle dark/light mode"></button>
   </footer>
 
   <script>
