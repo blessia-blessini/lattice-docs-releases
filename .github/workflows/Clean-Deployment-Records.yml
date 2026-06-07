@@ -11,8 +11,8 @@ permissions:
   actions: write       # needed for deleting workflow runs
 
 on:
-  schedule:
-    - cron: '0 23 * * 1'  # Every Monday at 23:00 UTC
+  # schedule:
+  #   - cron: '0 23 * * 1'  # Every Monday at 23:00 UTC
   workflow_dispatch:
 
 jobs:
