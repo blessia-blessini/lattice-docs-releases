@@ -40,8 +40,7 @@ Please scroll-down to see how Lattice looks on windows.
  - Download [Lattice-generated PDF](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.1/docs/demo/demo.md.pdf)
  - FOR REFERENCE AS [RENDERED BY GitHub](https://github.com/blessia-blessini/lattice-docs-releases/blob/main/Lattice-Releases/assets-v0.3.1/docs/demo/demo.md)
  - The plaintext that you would actually edit [Raw .md](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.1/docs/demo/demo.md)
+
 ![](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.1/docs/demo/demo_assets/img_1780574419628.png)
 
 ![](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.1/docs/demo/demo_assets/img_1780575215039.png)
-
-
