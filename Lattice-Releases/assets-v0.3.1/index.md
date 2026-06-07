@@ -21,8 +21,8 @@
  - DUAL LICENCE - FOR TERMS DETAILS SEE [README.md section Licencing](https://github.com/blessia-blessini/lattice#licensing).
 
 ## Test Coverage of
- - [BACKEND](https://lattice-technologies.com/Lattice-Releases/assets-v0.3.1/coverage/src-tauri/target/llvm-cov/html/)
- - [FRONTEND](https://lattice-technologies.com/Lattice-Releases/assets-v0.3.1/coverage/coverage/)
+ - [BACKEND](https://lattice-md.app/Lattice-Releases/assets-v0.3.1/coverage/src-tauri/target/llvm-cov/html/)
+ - [FRONTEND](https://lattice-md.app/Lattice-Releases/assets-v0.3.1/coverage/coverage/)
 
 ## Demo Document
 A Markdown file — open directly in Lattice, read on GitHub, or view as HTML/PDF here.
