@@ -1,13 +1,15 @@
 # Lattice v0.3.3
 **Released:** 2026-06-09 22:16 UTC
-### Changes
-- FIX: Katex blocks doo not flash the cursor
 
----
-## v0.3.3
-### Changes
-  
-- FIX: Katex blocks doo not flash the cursor
+### Changes:
+
+- FIX: Katex blocks does _not_ flash the cursor
+- Rexent Changes from v0.3.2
+  - FEAT: Dual-View Cursor Flash
+  - DOC: Update docs links, changelog, and workflow
+  - DOC: Add blank line between demo links
+  - Chore: Update project dependencies
+
 ## Download Lattice
 | File | Install on | Size |
 |:-----|:-----------|-----:|
@@ -46,5 +48,3 @@ Please scroll-down to see how Lattice looks on windows.
 ![](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.3/docs/demo/demo_assets/img_1780574419628.png)
 
 ![](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.3/docs/demo/demo_assets/img_1780575215039.png)
-
-
