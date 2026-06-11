@@ -4,7 +4,7 @@
 ### Changes:
 
 - FIX: Katex blocks does _not_ flash the cursor
-- Rexent Changes from v0.3.2
+- Recent Changes from v0.3.2
   - FEAT: Dual-View Cursor Flash
   - DOC: Update docs links, changelog, and workflow
   - DOC: Add blank line between demo links
@@ -32,8 +32,6 @@
 A Markdown file — open directly in Lattice, read on GitHub, or view as HTML/PDF here.
 
 ### A documment named `demo.md`
-
-
 
 Here is a pdf that lattice generated as a print-out.
 
