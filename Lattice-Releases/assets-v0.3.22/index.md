@@ -8,8 +8,7 @@
 - FIX: Don't abort winget bootstrap on a harmless VCLibs version conflict
 - CHORE: install winget on windows arm to be equivelent
 - FEAT: Build and test windows-arm-desktop natively on windows-11-arm
-- FIX: make sure arm for windows is built
-- FEAT: Added Windws arm build
+- FEAT: Added Windows ARM build
 - CHORE: Extract MSIX packaging into shared script, build it in CI
 - CHORE: bumped version to v0.3.22
 ## Download Lattice
@@ -29,7 +28,7 @@ Or download a package directly:
 | [lattice_0.3.22_aarch64.dmg](https://github.com/blessia-blessini/lattice/releases/download/v0.3.22/lattice_0.3.22_aarch64.dmg) | <span class="material-icons">laptop_mac</span> macOS — Apple Silicon (ARM64) | 6.9 MB |
 | [lattice_0.3.22_amd64.AppImage](https://github.com/blessia-blessini/lattice/releases/download/v0.3.22/lattice_0.3.22_amd64.AppImage) | <span class="material-icons">terminal</span> Linux — x86-64 (AppImage) | 79.0 MB |
 | [lattice_0.3.22_amd64.deb](https://github.com/blessia-blessini/lattice/releases/download/v0.3.22/lattice_0.3.22_amd64.deb) | <span class="material-icons">terminal</span> Linux — x86-64 (Debian / Ubuntu) | 7.7 MB |
-| [lattice_0.3.22_arm64-setup.exe](https://lattice-md.app/Lattice-Releases/assets-v0.3.22/bin-hex/lattice_0.3.22_arm64-setup.exe) | ? | 4.8 MB |
+| [lattice_0.3.22_arm64-setup.exe](https://lattice-md.app/Lattice-Releases/assets-v0.3.22/bin-hex/lattice_0.3.22_arm64-setup.exe) |  <span class="material-icons">window</span> Windows — Intel / (ARM 64) | 4.8 MB |
 | [lattice_0.3.22_x64-setup.exe](https://lattice-md.app/Lattice-Releases/assets-v0.3.22/bin-hex/lattice_0.3.22_x64-setup.exe) | <span class="material-icons">window</span> Windows — Intel / AMD (x86-64) | 5.1 MB |
 | [lattice_0.3.22_x64.dmg](https://github.com/blessia-blessini/lattice/releases/download/v0.3.22/lattice_0.3.22_x64.dmg) | <span class="material-icons">laptop_mac</span> macOS — Intel (x86-64) | 7.0 MB |
 | [SHA256SUMS.txt](https://lattice-md.app/Lattice-Releases/assets-v0.3.22/bin-hex/SHA256SUMS.txt) | <span class="material-icons">tag</span> Checksums (SHA-256) | 0.0 MB |
@@ -69,5 +68,3 @@ Please scroll down to see how Lattice looks on Windows.
 ![Lattice demo screenshot](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.22/docs/demo/demo_assets/img_d1780574419628.png)
 
 ![Lattice demo screenshot](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.22/docs/demo/demo_assets/img_da1780574419628.png)
-
-
