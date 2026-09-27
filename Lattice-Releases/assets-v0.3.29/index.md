@@ -1,0 +1,124 @@
+# Lattice v0.3.29
+**Released:** 2026-09-27 19:45 UTC
+### Changes
+  <!-- INSERT BULLETS UNDER THIS LINE -->
+- CHORE: Update dependencies
+- CHORE: Set version to 0.3.29
+- FIX: Install xdg-utils so the AppImage bundles on the ARM64 runner
+- FIX: Init Android only on the CI leg that installs the Android SDK
+- FEAT: Build Linux ARM64 natively in CI
+- CHORE: merged dev branch to avoid future remerges on squash
+- FIX: Timing issue of macOS on Intel/AMD64 Build
+- FIX: Stop headless export depending on timers in a hidden window
+- CHORE: Note the upstream coverage bug on Windows ARM64
+- RELEASE v0.3.28: CLI for HTML and PDF export
+## Download Lattice
+
+**Windows users: install from the Microsoft Store**
+
+<a href="https://get.microsoft.com/installer/download/9pm3gb09941t?referrer=appbadge" target="_self"><picture>   <source media="(prefers-color-scheme: dark)" srcset="https://get.microsoft.com/images/en-us%20light.svg">   <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"     style="width:200px;max-width:100%;height:auto;display:inline-block" alt="Download Lattice from the Microsoft Store"/></picture></a>
+
+<p>With a browser, just jump to:<br><a href="https://apps.microsoft.com/detail/9pm3gb09941t">https://apps.microsoft.com/detail/9pm3gb09941t</a></p>
+
+Or download a package directly:
+
+| File | Install on | Size |
+|:-----|:-----------|-----:|
+| [app-universal-release-unsigned.apk](https://github.com/blessia-blessini/lattice/releases/download/v0.3.29/app-universal-release-unsigned.apk) | <span class="material-icons">android</span> Android — Universal | 64.0 MB |
+| [app-universal-release.aab](https://github.com/blessia-blessini/lattice/releases/download/v0.3.29/app-universal-release.aab) | <span class="material-icons">android</span> Android — Universal (Play Store) | 27.9 MB |
+| [lattice-md.msixbundle](https://github.com/blessia-blessini/lattice/releases/download/v0.3.29/lattice-md.msixbundle) | <span class="material-icons">window</span> Windows — Store bundle (.msixbundle, sideload) | 12.6 MB |
+| [lattice_0.3.29_aarch64.AppImage](https://github.com/blessia-blessini/lattice/releases/download/v0.3.29/lattice_0.3.29_aarch64.AppImage) | <span class="material-icons">terminal</span> Linux — ARM64 (AppImage) | 80.6 MB |
+| [lattice_0.3.29_aarch64.dmg](https://github.com/blessia-blessini/lattice/releases/download/v0.3.29/lattice_0.3.29_aarch64.dmg) | <span class="material-icons">laptop_mac</span> macOS — Apple Silicon (ARM64) | 7.0 MB |
+| [lattice_0.3.29_amd64.AppImage](https://github.com/blessia-blessini/lattice/releases/download/v0.3.29/lattice_0.3.29_amd64.AppImage) | <span class="material-icons">terminal</span> Linux — x86-64 (AppImage) | 82.5 MB |
+| [lattice_0.3.29_amd64.deb](https://github.com/blessia-blessini/lattice/releases/download/v0.3.29/lattice_0.3.29_amd64.deb) | <span class="material-icons">terminal</span> Linux — x86-64 (Debian / Ubuntu) | 7.9 MB |
+| [lattice_0.3.29_arm64-setup.exe](https://lattice-md.app/Lattice-Releases/assets-v0.3.29/bin-hex/lattice_0.3.29_arm64-setup.exe) | <span class="material-icons">window</span> Windows — ARM64 | 4.9 MB |
+| [lattice_0.3.29_arm64.deb](https://github.com/blessia-blessini/lattice/releases/download/v0.3.29/lattice_0.3.29_arm64.deb) | <span class="material-icons">terminal</span> Linux — ARM64 (Debian / Ubuntu) | 7.9 MB |
+| [lattice_0.3.29_x64-setup.exe](https://lattice-md.app/Lattice-Releases/assets-v0.3.29/bin-hex/lattice_0.3.29_x64-setup.exe) | <span class="material-icons">window</span> Windows — Intel / AMD (x86-64) | 5.2 MB |
+| [lattice_0.3.29_x64.dmg](https://github.com/blessia-blessini/lattice/releases/download/v0.3.29/lattice_0.3.29_x64.dmg) | <span class="material-icons">laptop_mac</span> macOS — Intel (x86-64) | 7.1 MB |
+| [SHA256SUMS.txt](https://lattice-md.app/Lattice-Releases/assets-v0.3.29/bin-hex/SHA256SUMS.txt) | <span class="material-icons">tag</span> Checksums (SHA-256) | 0.0 MB |
+
+## Notes
+
+- [Full release on GitHub](https://github.com/blessia-blessini/lattice/releases/tag/v0.3.29)
+- DUAL LICENSE — for terms, see [README.md section Licensing](https://github.com/blessia-blessini/lattice#licensing).
+- Lattice collects no personal data — see the [Privacy Statement](https://github.com/blessia-blessini/lattice/blob/dev/PRIVACY.md).
+
+## Test Coverage
+
+- [BACKEND](https://lattice-md.app/Lattice-Releases/assets-v0.3.29/coverage/src-tauri/target/llvm-cov/html/)
+- [FRONTEND](https://lattice-md.app/Lattice-Releases/assets-v0.3.29/coverage/coverage/)
+
+## Demo Document
+A Markdown file — open directly in Lattice, read on GitHub, or view as HTML/PDF here.
+
+### A document named `demo.md`
+
+
+
+- Only for reference, as [rendered by GitHub](https://github.com/blessia-blessini/lattice-docs-releases/blob/main/Lattice-Releases/assets-v0.3.29/docs/demo/demo.md)
+- The plaintext that you would actually edit: [Raw .md](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.29/docs/demo/demo.md)
+
+### Generated by Lattice itself
+
+Each desktop build in this release exported `demo.md` on its own operating
+system, through that platform's own WebView. Nothing below was produced by
+hand or by a converter — it is the output of the same `--export-html` and
+`--export-pdf` commands you can run yourself:
+
+```sh
+lattice --export-html demo.md
+lattice --export-pdf demo.md
+```
+
+#### <span class="material-icons">terminal</span> Linux — ARM64
+
+<iframe src="pdf-viewer.html?file=https%3A%2F%2Fraw.githubusercontent.com%2Fblessia-blessini%2Flattice-docs-releases%2Fmain%2FLattice-Releases%2Fassets-v0.3.29%2Fdocs%2Fdemo%2Fgenerated%2Fdemo-linux-arm-desktop.pdf" width="100%" style="border:none;border-radius:4px;margin:12px 0;display:block;min-height:70vh"></iframe>
+
+- Download [Lattice-generated PDF](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.29/docs/demo/generated/demo-linux-arm-desktop.pdf)
+- Open the [Lattice-generated HTML](assets-v0.3.29/docs/demo/generated/demo-linux-arm-desktop.html)
+
+#### <span class="material-icons">terminal</span> Linux — x86-64
+
+<iframe src="pdf-viewer.html?file=https%3A%2F%2Fraw.githubusercontent.com%2Fblessia-blessini%2Flattice-docs-releases%2Fmain%2FLattice-Releases%2Fassets-v0.3.29%2Fdocs%2Fdemo%2Fgenerated%2Fdemo-linux-desktop.pdf" width="100%" style="border:none;border-radius:4px;margin:12px 0;display:block;min-height:70vh"></iframe>
+
+- Download [Lattice-generated PDF](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.29/docs/demo/generated/demo-linux-desktop.pdf)
+- Open the [Lattice-generated HTML](assets-v0.3.29/docs/demo/generated/demo-linux-desktop.html)
+
+#### <span class="material-icons">laptop_mac</span> macOS — Apple Silicon (ARM64)
+
+<iframe src="pdf-viewer.html?file=https%3A%2F%2Fraw.githubusercontent.com%2Fblessia-blessini%2Flattice-docs-releases%2Fmain%2FLattice-Releases%2Fassets-v0.3.29%2Fdocs%2Fdemo%2Fgenerated%2Fdemo-macos-arm64.pdf" width="100%" style="border:none;border-radius:4px;margin:12px 0;display:block;min-height:70vh"></iframe>
+
+- Download [Lattice-generated PDF](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.29/docs/demo/generated/demo-macos-arm64.pdf)
+- Open the [Lattice-generated HTML](assets-v0.3.29/docs/demo/generated/demo-macos-arm64.html)
+
+#### <span class="material-icons">laptop_mac</span> macOS — Intel (x86-64)
+
+<iframe src="pdf-viewer.html?file=https%3A%2F%2Fraw.githubusercontent.com%2Fblessia-blessini%2Flattice-docs-releases%2Fmain%2FLattice-Releases%2Fassets-v0.3.29%2Fdocs%2Fdemo%2Fgenerated%2Fdemo-macos-intel.pdf" width="100%" style="border:none;border-radius:4px;margin:12px 0;display:block;min-height:70vh"></iframe>
+
+- Download [Lattice-generated PDF](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.29/docs/demo/generated/demo-macos-intel.pdf)
+- Open the [Lattice-generated HTML](assets-v0.3.29/docs/demo/generated/demo-macos-intel.html)
+
+#### <span class="material-icons">window</span> Windows — ARM64
+
+<iframe src="pdf-viewer.html?file=https%3A%2F%2Fraw.githubusercontent.com%2Fblessia-blessini%2Flattice-docs-releases%2Fmain%2FLattice-Releases%2Fassets-v0.3.29%2Fdocs%2Fdemo%2Fgenerated%2Fdemo-windows-arm-desktop.pdf" width="100%" style="border:none;border-radius:4px;margin:12px 0;display:block;min-height:70vh"></iframe>
+
+- Download [Lattice-generated PDF](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.29/docs/demo/generated/demo-windows-arm-desktop.pdf)
+- Open the [Lattice-generated HTML](assets-v0.3.29/docs/demo/generated/demo-windows-arm-desktop.html)
+
+#### <span class="material-icons">window</span> Windows — Intel / AMD (x86-64)
+
+<iframe src="pdf-viewer.html?file=https%3A%2F%2Fraw.githubusercontent.com%2Fblessia-blessini%2Flattice-docs-releases%2Fmain%2FLattice-Releases%2Fassets-v0.3.29%2Fdocs%2Fdemo%2Fgenerated%2Fdemo-windows-desktop.pdf" width="100%" style="border:none;border-radius:4px;margin:12px 0;display:block;min-height:70vh"></iframe>
+
+- Download [Lattice-generated PDF](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.29/docs/demo/generated/demo-windows-desktop.pdf)
+- Open the [Lattice-generated HTML](assets-v0.3.29/docs/demo/generated/demo-windows-desktop.html)
+
+
+![Lattice demo screenshot](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.29/docs/demo/demo_assets/img_1780574419628.png)
+
+![Lattice demo screenshot](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.29/docs/demo/demo_assets/img_1780575215039.png)
+
+![Lattice demo screenshot](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.29/docs/demo/demo_assets/img_d1780574419628.png)
+
+![Lattice demo screenshot](https://raw.githubusercontent.com/blessia-blessini/lattice-docs-releases/main/Lattice-Releases/assets-v0.3.29/docs/demo/demo_assets/img_da1780574419628.png)
+
+
