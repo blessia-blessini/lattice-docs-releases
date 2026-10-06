@@ -1,0 +1,352 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/preview-theme.css</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> preview-theme.css</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* LEGAL NOTE:
+   LATTICE (tm) - The Portable and standard Markdown Editor
+   Copyright (C) 2026 Owner of blessini.com (a.k.a Blessia)
+   See LICENCE file in GitHUB root folder of the repository.
+   END OF NOTE */
+&nbsp;
+/* The preview's document look per theme: github-markdown-css overrides and
+   the code-token palette. Its own file, not part of App.css, because two
+   consumers need exactly these rules and no others: App.tsx imports it for
+   the preview pane, and lib/export-document.ts embeds it (as text) in every
+   `--export-html` file (REQ-LTTCE-XPT-00014). App.css holds the app chrome,
+   which must never reach an exported document. */
+&nbsp;
+/* Override github-markdown-css per preview theme.
+   Must use the current variable names (--bgColor-*, --fgColor-*) since
+   the old names (--color-canvas-*) are no longer used by the library. */
+.markdown-body[data-theme="dark"] {
+  color-scheme: dark;
+  color: #f0f6fc !important;
+  --bgColor-default: #0d1117 !important;
+  --bgColor-muted: #151b23 !important;
+  --fgColor-default: #f0f6fc !important;
+  --fgColor-muted: #9198a1 !important;
+  --borderColor-default: #3d444d !important;
+  --borderColor-muted: #3d444db3 !important;
+  --bgColor-neutral-muted: #656c7633 !important;
+&nbsp;
+  &amp; table tr    { background-color: #0d1117 !important; }
+  &amp; table tr:nth-child(2n) { background-color: #151b23 !important; }
+  &amp; code, &amp; pre { background-color: #151b23 !important; color: #f0f6fc !important; }
+}
+&nbsp;
+.markdown-body[data-theme="light"] {
+  color-scheme: light;
+  color: #1f2328 !important;
+  --bgColor-default: #ffffff !important;
+  --bgColor-muted: #f6f8fa !important;
+  --fgColor-default: #1f2328 !important;
+  --fgColor-muted: #59636e !important;
+  --borderColor-default: #d1d9e0 !important;
+  --borderColor-muted: #d1d9e0b3 !important;
+  --bgColor-neutral-muted: #818b981f !important;
+&nbsp;
+  &amp; table tr    { background-color: #ffffff !important; }
+  &amp; table tr:nth-child(2n) { background-color: #f6f8fa !important; }
+  &amp; code, &amp; pre { background-color: #f6f8fa !important; color: #1f2328 !important; }
+}
+&nbsp;
+/* IMPL-LTTCE-PRV-00003 — Preview Code Syntax Highlighting token colors.
+   Classes are the stable `tok-*` names emitted by Lezer's classHighlighter
+   (lib/code-highlight.ts). Palettes follow GitHub light/dark so the preview
+   matches both github-markdown-css and the editor pane's githubLight /
+   githubDark themes. */
+.markdown-body[data-theme="light"] {
+  &amp; .tok-keyword, &amp; .tok-modifier, &amp; .tok-operatorKeyword { color: #cf222e !important; }
+  &amp; .tok-string, &amp; .tok-string2, &amp; .tok-regexp { color: #0a3069 !important; }
+  &amp; .tok-comment, &amp; .tok-lineComment, &amp; .tok-blockComment, &amp; .tok-docComment { color: #59636e !important; }
+  &amp; .tok-number, &amp; .tok-bool, &amp; .tok-atom, &amp; .tok-literal { color: #0550ae !important; }
+  &amp; .tok-typeName, &amp; .tok-className, &amp; .tok-namespace { color: #953800 !important; }
+  &amp; .tok-definition.tok-variableName, &amp; .tok-function, &amp; .tok-macroName { color: #8250df !important; }
+  &amp; .tok-propertyName, &amp; .tok-attributeName, &amp; .tok-labelName { color: #0550ae !important; }
+  &amp; .tok-tagName { color: #116329 !important; }
+  &amp; .tok-meta, &amp; .tok-processingInstruction { color: #59636e !important; }
+  &amp; .tok-link, &amp; .tok-url { color: #0969da !important; }
+  &amp; .tok-heading { color: #0550ae !important; font-weight: bold; }
+  &amp; .tok-emphasis { font-style: italic; }
+  &amp; .tok-strong { font-weight: bold; }
+  &amp; .tok-strikethrough { text-decoration: line-through; }
+  &amp; .tok-invalid { color: #82071e !important; }
+}
+&nbsp;
+.markdown-body[data-theme="dark"] {
+  &amp; .tok-keyword, &amp; .tok-modifier, &amp; .tok-operatorKeyword { color: #ff7b72 !important; }
+  &amp; .tok-string, &amp; .tok-string2, &amp; .tok-regexp { color: #a5d6ff !important; }
+  &amp; .tok-comment, &amp; .tok-lineComment, &amp; .tok-blockComment, &amp; .tok-docComment { color: #8b949e !important; }
+  &amp; .tok-number, &amp; .tok-bool, &amp; .tok-atom, &amp; .tok-literal { color: #79c0ff !important; }
+  &amp; .tok-typeName, &amp; .tok-className, &amp; .tok-namespace { color: #ffa657 !important; }
+  &amp; .tok-definition.tok-variableName, &amp; .tok-function, &amp; .tok-macroName { color: #d2a8ff !important; }
+  &amp; .tok-propertyName, &amp; .tok-attributeName, &amp; .tok-labelName { color: #79c0ff !important; }
+  &amp; .tok-tagName { color: #7ee787 !important; }
+  &amp; .tok-meta, &amp; .tok-processingInstruction { color: #8b949e !important; }
+  &amp; .tok-link, &amp; .tok-url { color: #58a6ff !important; }
+  &amp; .tok-heading { color: #79c0ff !important; font-weight: bold; }
+  &amp; .tok-emphasis { font-style: italic; }
+  &amp; .tok-strong { font-weight: bold; }
+  &amp; .tok-strikethrough { text-decoration: line-through; }
+  &amp; .tok-invalid { color: #ffa198 !important; }
+}
+/* IMPL-LTTCE-PRV-00003 END */
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-10-06T04:31:26.670Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    
