@@ -18,30 +18,21 @@
 
 Or download a package directly:
 
-| File | Install on | Size |
-|:-----|:-----------|-----:|
-| [app-universal-release-unsigned.apk](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/app-universal-release-unsigned.apk) | <span class="material-icons">android</span> Android — Universal | 65.9 MB |
-| [app-universal-release.aab](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/app-universal-release.aab) | <span class="material-icons">android</span> Android — Universal (Play Store) | 29.4 MB |
-| [lattice-android.cdx.json](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice-android.cdx.json) | <span class="material-icons">inventory_2</span> SBOM (CycloneDX) — android | 0.4 MB |
-| [lattice-linux-arm64-appimage.cdx.json](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice-linux-arm64-appimage.cdx.json) | <span class="material-icons">inventory_2</span> SBOM (CycloneDX) — linux-arm64-appimage | 0.1 MB |
-| [lattice-linux-arm64.cdx.json](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice-linux-arm64.cdx.json) | <span class="material-icons">inventory_2</span> SBOM (CycloneDX) — linux-arm64 | 0.4 MB |
-| [lattice-linux-x64-appimage.cdx.json](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice-linux-x64-appimage.cdx.json) | <span class="material-icons">inventory_2</span> SBOM (CycloneDX) — linux-x64-appimage | 0.1 MB |
-| [lattice-linux-x64.cdx.json](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice-linux-x64.cdx.json) | <span class="material-icons">inventory_2</span> SBOM (CycloneDX) — linux-x64 | 0.4 MB |
-| [lattice-macos-arm64.cdx.json](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice-macos-arm64.cdx.json) | <span class="material-icons">inventory_2</span> SBOM (CycloneDX) — macos-arm64 | 0.4 MB |
-| [lattice-macos-x64.cdx.json](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice-macos-x64.cdx.json) | <span class="material-icons">inventory_2</span> SBOM (CycloneDX) — macos-x64 | 0.4 MB |
-| [lattice-md.msixbundle](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice-md.msixbundle) | <span class="material-icons">window</span> Windows — Store bundle (.msixbundle, sideload) | 13.5 MB |
-| [lattice-win-arm64.cdx.json](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice-win-arm64.cdx.json) | <span class="material-icons">inventory_2</span> SBOM (CycloneDX) — win-arm64 | 0.4 MB |
-| [lattice-win-x64.cdx.json](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice-win-x64.cdx.json) | <span class="material-icons">inventory_2</span> SBOM (CycloneDX) — win-x64 | 0.4 MB |
-| [lattice_0.3.50_aarch64.AppImage](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice_0.3.50_aarch64.AppImage) | <span class="material-icons">terminal</span> Linux — ARM64 (AppImage) | 80.1 MB |
-| [lattice_0.3.50_aarch64.dmg](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice_0.3.50_aarch64.dmg) | <span class="material-icons">laptop_mac</span> macOS — Apple Silicon (ARM64) | 7.5 MB |
-| [lattice_0.3.50_amd64.AppImage](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice_0.3.50_amd64.AppImage) | <span class="material-icons">terminal</span> Linux — x86-64 (AppImage) | 82.0 MB |
-| [lattice_0.3.50_amd64.deb](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice_0.3.50_amd64.deb) | <span class="material-icons">terminal</span> Linux — x86-64 (Debian / Ubuntu) | 8.4 MB |
-| [lattice_0.3.50_arm64-setup.exe](https://lattice-md.app/Lattice-Releases/assets-v0.3.50/bin-hex/lattice_0.3.50_arm64-setup.exe) | <span class="material-icons">window</span> Windows — ARM64 | 5.3 MB |
-| [lattice_0.3.50_arm64.deb](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice_0.3.50_arm64.deb) | <span class="material-icons">terminal</span> Linux — ARM64 (Debian / Ubuntu) | 8.4 MB |
-| [lattice_0.3.50_x64-setup.exe](https://lattice-md.app/Lattice-Releases/assets-v0.3.50/bin-hex/lattice_0.3.50_x64-setup.exe) | <span class="material-icons">window</span> Windows — Intel / AMD (x86-64) | 5.6 MB |
-| [lattice_0.3.50_x64.dmg](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice_0.3.50_x64.dmg) | <span class="material-icons">laptop_mac</span> macOS — Intel (x86-64) | 7.6 MB |
-| [SHA256SUMS.txt](https://lattice-md.app/Lattice-Releases/assets-v0.3.50/bin-hex/SHA256SUMS.txt) | <span class="material-icons">tag</span> Checksums (SHA-256) | 0.0 MB |
-| [THIRD-PARTY-NOTICES.md](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/THIRD-PARTY-NOTICES.md) | <span class="material-icons">gavel</span> Third-party licences and copyrights | 0.8 MB |
+| File                                                                                                                                           | Install on                                                                                |    Size |
+| :--------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- | ------: |
+| [app-universal-release-unsigned.apk](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/app-universal-release-unsigned.apk) | <span class="material-icons">android</span> Android — Universal                           | 65.9 MB |
+| [app-universal-release.aab](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/app-universal-release.aab)                   | <span class="material-icons">android</span> Android — Universal (Play Store)              | 29.4 MB |
+| [lattice-md.msixbundle](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice-md.msixbundle)                           | <span class="material-icons">window</span> Windows — Store bundle (.msixbundle, sideload) | 13.5 MB |
+| [lattice_0.3.50_aarch64.AppImage](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice_0.3.50_aarch64.AppImage)       | <span class="material-icons">terminal</span> Linux — ARM64 (AppImage)                     | 80.1 MB |
+| [lattice_0.3.50_aarch64.dmg](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice_0.3.50_aarch64.dmg)                 | <span class="material-icons">laptop_mac</span> macOS — Apple Silicon (ARM64)              |  7.5 MB |
+| [lattice_0.3.50_amd64.AppImage](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice_0.3.50_amd64.AppImage)           | <span class="material-icons">terminal</span> Linux — x86-64 (AppImage)                    | 82.0 MB |
+| [lattice_0.3.50_amd64.deb](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice_0.3.50_amd64.deb)                     | <span class="material-icons">terminal</span> Linux — x86-64 (Debian / Ubuntu)             |  8.4 MB |
+| [lattice_0.3.50_arm64-setup.exe](https://lattice-md.app/Lattice-Releases/assets-v0.3.50/bin-hex/lattice_0.3.50_arm64-setup.exe)                | <span class="material-icons">window</span> Windows — ARM64                                |  5.3 MB |
+| [lattice_0.3.50_arm64.deb](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice_0.3.50_arm64.deb)                     | <span class="material-icons">terminal</span> Linux — ARM64 (Debian / Ubuntu)              |  8.4 MB |
+| [lattice_0.3.50_x64-setup.exe](https://lattice-md.app/Lattice-Releases/assets-v0.3.50/bin-hex/lattice_0.3.50_x64-setup.exe)                    | <span class="material-icons">window</span> Windows — Intel / AMD (x86-64)                 |  5.6 MB |
+| [lattice_0.3.50_x64.dmg](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/lattice_0.3.50_x64.dmg)                         | <span class="material-icons">laptop_mac</span> macOS — Intel (x86-64)                     |  7.6 MB |
+| [SHA256SUMS.txt](https://lattice-md.app/Lattice-Releases/assets-v0.3.50/bin-hex/SHA256SUMS.txt)                                                | <span class="material-icons">tag</span> Checksums (SHA-256)                               |  0.0 MB |
+| [THIRD-PARTY-NOTICES.md](https://github.com/blessia-blessini/lattice/releases/download/v0.3.50/THIRD-PARTY-NOTICES.md)                         | <span class="material-icons">gavel</span> Third-party licences and copyrights             |  0.8 MB |
 
 ## Notes
 
