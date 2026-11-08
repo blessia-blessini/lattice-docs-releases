@@ -1,0 +1,33 @@
+Package: lattice
+Version: 0.3.56
+Architecture: amd64
+Maintainer: Blessia Blessini
+Installed-Size: 23814
+Depends: libwebkit2gtk-4.1-0, libgtk-3-0
+Provides: lattice-md
+Filename: pool/main/l/lattice/lattice_0.3.56_amd64.deb
+Size: 8782202
+MD5sum: 5cae6993d98a110d4fc6f884027db6e8
+SHA1: 2b0e6f6f54e488cff6c3ed7fb36c9dcb1d932543
+SHA256: a600ca68711064071cd81bbde157aae68d7432dd52c24838752d42086d692ab7
+Priority: optional
+Description: A Markdown Editor that respects standards
+ (none)
+
+Package: lattice-md-keyring
+Version: 2026.11.08.160550
+Architecture: all
+Maintainer: Lattice Releases <blessia@blessini.com>
+Filename: pool/main/l/lattice-md-keyring/lattice-md-keyring_2026.11.08.160550_all.deb
+Size: 1400
+MD5sum: 0d3eaa609cb7ccb4c3da14b3b9ce1857
+SHA1: 479e0f26e60d9f6211e91b4dcb3d3947b4a36b1b
+SHA256: b2f62a99076846f300fcae782d64795559c3fb0026dbfb7286335b8255c7eb88
+Section: misc
+Priority: optional
+Homepage: https://lattice-md.app
+Description: signing key and source entry of the Lattice APT repository
+ Lets apt install and update Lattice (package lattice, also lattice-md) from
+ https://lattice-md.app/apt and check every download against the key.
+ A new key or a new expiry date arrives as an update of this package.
+
