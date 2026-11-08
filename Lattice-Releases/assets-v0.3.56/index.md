@@ -41,8 +41,9 @@ sudo apt remove lattice
 sudo apt purge lattice-md-keyring
 ```
 
+## Manual Installation and DOWNLOAD for ALL platforms including the already explained 
 
-Or download a package directly:
+Here are the installation packages:
 
 | File | Install on | Size |
 |:-----|:-----------|-----:|
