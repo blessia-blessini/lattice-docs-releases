@@ -8,9 +8,9 @@
 - CHORE: Set version to 0.3.57
 - RELEASE v0.3.56: Linux apt install test
 
-## Download Lattice
+## Installing Lattice (How to Download Lattice)
 
-## **Windows Users: Install from the Microsoft Store**
+### **Windows Users: Install from the Microsoft Store**
 
 ** easiest way now (while the executables are still not signed with official signatures), is to use Microdoft Store where the executable is signed by MS.
 
@@ -20,9 +20,9 @@
 
 ---
 
-## LINUX Ubuntu and Debian (x86-64 and ARM64)
+### LINUX Ubuntu and Debian (x86-64 and ARM64)
 
-### Install with **apt**
+#### Install with **apt**
 
 Once, add the Lattice package source and its signing key:
 
@@ -48,13 +48,13 @@ sudo apt remove lattice
 sudo apt purge lattice-md-keyring
 ```
 
-### Other Linux methods and installations
+#### Other Linux methods and installations
 
    We support appimage install on both Intel/AMD and ARM Linux Versions.  See the table for manual installation.
 
 ---
 
-## Manual Installation and DOWNLOAD for ALL platforms including the already explained
+### Manual Installation and DOWNLOAD for ALL platforms including the already explained
 
 Here are the installation packages:
 
