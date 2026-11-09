@@ -7,17 +7,22 @@
 - FIX: Replace the apt signing key in one release, act on review cycle 1
 - CHORE: Set version to 0.3.57
 - RELEASE v0.3.56: Linux apt install test
+
 ## Download Lattice
 
-## **Windows users: install from the Microsoft Store**
+## **Windows Users: Install from the Microsoft Store**
+
+** easiest way now (while the executables are still not signed with official signatures), is to use Microdoft Store where the executable is signed by MS.
 
 <a href="https://get.microsoft.com/installer/download/9pm3gb09941t?referrer=appbadge" target="_self"><picture>   <source media="(prefers-color-scheme: dark)" srcset="https://get.microsoft.com/images/en-us%20light.svg">   <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"     style="width:200px;max-width:100%;height:auto;display:inline-block" alt="Download Lattice from the Microsoft Store"/></picture></a>
 
 <p>With a browser, just jump to:<br><a href="https://apps.microsoft.com/detail/9pm3gb09941t">https://apps.microsoft.com/detail/9pm3gb09941t</a></p>
 
+---
+
 ## LINUX Ubuntu and Debian (x86-64 and ARM64)
 
-Install with **apt**
+### Install with **apt**
 
 Once, add the Lattice package source and its signing key:
 
@@ -43,29 +48,35 @@ sudo apt remove lattice
 sudo apt purge lattice-md-keyring
 ```
 
+### Other Linux methods and installations
+
+   We support appimage install on both Intel/AMD and ARM Linux Versions.  See the table for manual installation.
+
+---
+
 ## Manual Installation and DOWNLOAD for ALL platforms including the already explained
 
 Here are the installation packages:
 
-| File | Install on | Size |
-|:-----|:-----------|-----:|
-| [app-universal-release-unsigned.apk](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/app-universal-release-unsigned.apk) | <span class="material-icons">android</span> Android — Universal | 66.0 MB |
-| [app-universal-release.aab](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/app-universal-release.aab) | <span class="material-icons">android</span> Android — Universal (Play Store) | 29.4 MB |
-| [FOSS-TOPICS.md](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/FOSS-TOPICS.md) | <span class="material-icons">gavel</span> Licence review: every finding and its decision | 0.0 MB |
-| [lattice-md.msixbundle](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/lattice-md.msixbundle) | <span class="material-icons">window</span> Windows — Store bundle (.msixbundle, sideload) | 13.6 MB |
-| [lattice_0.3.57_aarch64.AppImage](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/lattice_0.3.57_aarch64.AppImage) | <span class="material-icons">terminal</span> Linux — ARM64 (AppImage) | 80.1 MB |
-| [lattice_0.3.57_aarch64.dmg](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/lattice_0.3.57_aarch64.dmg) | <span class="material-icons">laptop_mac</span> macOS — Apple Silicon (ARM64) | 7.5 MB |
-| [lattice_0.3.57_amd64.AppImage](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/lattice_0.3.57_amd64.AppImage) | <span class="material-icons">terminal</span> Linux — x86-64 (AppImage) | 82.0 MB |
-| [lattice_0.3.57_amd64.deb](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/lattice_0.3.57_amd64.deb) | <span class="material-icons">terminal</span> Linux — x86-64 (Debian / Ubuntu) | 8.4 MB |
-| [lattice_0.3.57_arm64-setup.exe](https://lattice-md.app/Lattice-Releases/assets-v0.3.57/bin-hex/lattice_0.3.57_arm64-setup.exe) | <span class="material-icons">window</span> Windows — ARM64 | 5.3 MB |
-| [lattice_0.3.57_arm64.deb](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/lattice_0.3.57_arm64.deb) | <span class="material-icons">terminal</span> Linux — ARM64 (Debian / Ubuntu) | 8.4 MB |
-| [lattice_0.3.57_sbom.zip](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/lattice_0.3.57_sbom.zip) | <span class="material-icons">inventory_2</span> SBOMs (CycloneDX), one per platform — zip | 0.1 MB |
-| [lattice_0.3.57_x64-setup.exe](https://lattice-md.app/Lattice-Releases/assets-v0.3.57/bin-hex/lattice_0.3.57_x64-setup.exe) | <span class="material-icons">window</span> Windows — Intel / AMD (x86-64) | 5.6 MB |
-| [lattice_0.3.57_x64.dmg](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/lattice_0.3.57_x64.dmg) | <span class="material-icons">laptop_mac</span> macOS — Intel (x86-64) | 7.6 MB |
-| [notice-additions.json](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/notice-additions.json) | <span class="material-icons">gavel</span> Licence review: what the decisions add to the notices | 0.1 MB |
-| [SHA256SUMS.txt](https://lattice-md.app/Lattice-Releases/assets-v0.3.57/bin-hex/SHA256SUMS.txt) | <span class="material-icons">tag</span> Checksums (SHA-256) | 0.0 MB |
-| [SHA256SUMS.txt.asc](https://lattice-md.app/Lattice-Releases/assets-v0.3.57/bin-hex/SHA256SUMS.txt.asc) | <span class="material-icons">key</span> Checksums - GPG signature | 0.0 MB |
-| [THIRD-PARTY-NOTICES.md](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/THIRD-PARTY-NOTICES.md) | <span class="material-icons">gavel</span> Third-party licences and copyrights | 0.9 MB |
+| File                                                                                                                                           | Install on                                                                                      |    Size |
+| :--------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- | ------: |
+| [app-universal-release-unsigned.apk](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/app-universal-release-unsigned.apk) | <span class="material-icons">android</span> Android — Universal                                 | 66.0 MB |
+| [app-universal-release.aab](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/app-universal-release.aab)                   | <span class="material-icons">android</span> Android — Universal (Play Store)                    | 29.4 MB |
+| [FOSS-TOPICS.md](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/FOSS-TOPICS.md)                                         | <span class="material-icons">gavel</span> Licence review: every finding and its decision        |  0.0 MB |
+| [lattice-md.msixbundle](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/lattice-md.msixbundle)                           | <span class="material-icons">window</span> Windows — Store bundle (.msixbundle, sideload)       | 13.6 MB |
+| [lattice_0.3.57_aarch64.AppImage](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/lattice_0.3.57_aarch64.AppImage)       | <span class="material-icons">terminal</span> Linux — ARM64 (AppImage)                           | 80.1 MB |
+| [lattice_0.3.57_aarch64.dmg](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/lattice_0.3.57_aarch64.dmg)                 | <span class="material-icons">laptop_mac</span> macOS — Apple Silicon (ARM64)                    |  7.5 MB |
+| [lattice_0.3.57_amd64.AppImage](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/lattice_0.3.57_amd64.AppImage)           | <span class="material-icons">terminal</span> Linux — x86-64 (AppImage)                          | 82.0 MB |
+| [lattice_0.3.57_amd64.deb](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/lattice_0.3.57_amd64.deb)                     | <span class="material-icons">terminal</span> Linux — x86-64 (Debian / Ubuntu)                   |  8.4 MB |
+| [lattice_0.3.57_arm64-setup.exe](https://lattice-md.app/Lattice-Releases/assets-v0.3.57/bin-hex/lattice_0.3.57_arm64-setup.exe)                | <span class="material-icons">window</span> Windows — ARM64                                      |  5.3 MB |
+| [lattice_0.3.57_arm64.deb](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/lattice_0.3.57_arm64.deb)                     | <span class="material-icons">terminal</span> Linux — ARM64 (Debian / Ubuntu)                    |  8.4 MB |
+| [lattice_0.3.57_sbom.zip](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/lattice_0.3.57_sbom.zip)                       | <span class="material-icons">inventory_2</span> SBOMs (CycloneDX), one per platform — zip       |  0.1 MB |
+| [lattice_0.3.57_x64-setup.exe](https://lattice-md.app/Lattice-Releases/assets-v0.3.57/bin-hex/lattice_0.3.57_x64-setup.exe)                    | <span class="material-icons">window</span> Windows — Intel / AMD (x86-64)                       |  5.6 MB |
+| [lattice_0.3.57_x64.dmg](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/lattice_0.3.57_x64.dmg)                         | <span class="material-icons">laptop_mac</span> macOS — Intel (x86-64)                           |  7.6 MB |
+| [notice-additions.json](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/notice-additions.json)                           | <span class="material-icons">gavel</span> Licence review: what the decisions add to the notices |  0.1 MB |
+| [SHA256SUMS.txt](https://lattice-md.app/Lattice-Releases/assets-v0.3.57/bin-hex/SHA256SUMS.txt)                                                | <span class="material-icons">tag</span> Checksums (SHA-256)                                     |  0.0 MB |
+| [SHA256SUMS.txt.asc](https://lattice-md.app/Lattice-Releases/assets-v0.3.57/bin-hex/SHA256SUMS.txt.asc)                                        | <span class="material-icons">key</span> Checksums - GPG signature                               |  0.0 MB |
+| [THIRD-PARTY-NOTICES.md](https://github.com/blessia-blessini/lattice/releases/download/v0.3.57/THIRD-PARTY-NOTICES.md)                         | <span class="material-icons">gavel</span> Third-party licences and copyrights                   |  0.9 MB |
 
 ## Notes
 
