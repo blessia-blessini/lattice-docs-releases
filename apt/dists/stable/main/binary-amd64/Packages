@@ -1,15 +1,15 @@
 Package: lattice
-Version: 0.3.56
+Version: 0.3.57
 Architecture: amd64
 Maintainer: Blessia Blessini
-Installed-Size: 23814
+Installed-Size: 23803
 Depends: libwebkit2gtk-4.1-0, libgtk-3-0
 Provides: lattice-md
-Filename: pool/main/l/lattice/lattice_0.3.56_amd64.deb
-Size: 8782202
-MD5sum: 5cae6993d98a110d4fc6f884027db6e8
-SHA1: 2b0e6f6f54e488cff6c3ed7fb36c9dcb1d932543
-SHA256: a600ca68711064071cd81bbde157aae68d7432dd52c24838752d42086d692ab7
+Filename: pool/main/l/lattice/lattice_0.3.57_amd64.deb
+Size: 8782364
+MD5sum: c6770d00e3be893fccd5707f5df2db7c
+SHA1: 1aff200f739440c4b4b9765e4faf6a8e4c066917
+SHA256: 4d0f63299bfc5fc71511e7f5c0fc2bb27ec9d4677c5a6d3401d068a4e8b267d1
 Priority: optional
 Description: A Markdown Editor that respects standards
  (none)

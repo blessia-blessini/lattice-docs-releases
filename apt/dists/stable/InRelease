@@ -4,35 +4,35 @@ Hash: SHA512
 Architectures: amd64 arm64
 Codename: stable
 Components: main
-Date: Sun, 08 Nov 2026 21:43:11 +0000
+Date: Mon, 09 Nov 2026 00:38:35 +0000
 Description: Lattice, the Markdown editor
 Label: Lattice
 Origin: Lattice
 Suite: stable
 MD5Sum:
- d8f3fcf13e608c6d737e48a56c9fa858             1218 main/binary-amd64/Packages
- e529c02be85a87a629b6815b951941e3              706 main/binary-amd64/Packages.gz
- 1cf400c38378a599d759f3507fdde273             1218 main/binary-arm64/Packages
- c3991c891f637135a4657765026b2c2e              705 main/binary-arm64/Packages.gz
+ 66a8935d777682267265e912477af494             1218 main/binary-amd64/Packages
+ 40a4db9e8c8dcf6e5a458139666b9a9d              705 main/binary-amd64/Packages.gz
+ 5b6c431591d86f362ee0a736bf5208b3             1218 main/binary-arm64/Packages
+ 19b9f9ee9b6b86e74b2b0951235e9b90              705 main/binary-arm64/Packages.gz
 SHA1:
- a3cc937e35147a5874573fbdee49928fb7e863a4             1218 main/binary-amd64/Packages
- 6d32c832946ca8ab943e9ae04c960b5991220bd9              706 main/binary-amd64/Packages.gz
- c461814149a5b0762018fecdf360e1dcbd8e28dd             1218 main/binary-arm64/Packages
- 829141073546aa30602a169c6212199b9c667f1a              705 main/binary-arm64/Packages.gz
+ 5a66c40817a34390320f7e065b53cd2445713e07             1218 main/binary-amd64/Packages
+ 829adcd21054f105c73b3bc921407cfdafc6b0fb              705 main/binary-amd64/Packages.gz
+ bf8084173d811ec5a532f72de60d0f8c7e11195f             1218 main/binary-arm64/Packages
+ cbd35ac9814890433e9be7365531987df4a9f452              705 main/binary-arm64/Packages.gz
 SHA256:
- 4b21686a16da1baf87b52dd8372cd1da83faa95a3a62ff05db89377b42d2ba08             1218 main/binary-amd64/Packages
- 201803e3db2e643167e308cc2468b7ca198329f8c47a2765125727c6111bd82d              706 main/binary-amd64/Packages.gz
- 80e28b1c9518f0cd390b2f8a0df1eaec14cd5871013773e2f7d1bb650d29db2c             1218 main/binary-arm64/Packages
- ab7ecd72e2c352d056977e157243e2e64af61e5ae8a0fe2e3df155613316936b              705 main/binary-arm64/Packages.gz
+ 5eed9868428bab1e15daa68687d0fea26fe0b2ef2e3b0938aa83327567c34fdb             1218 main/binary-amd64/Packages
+ a8d68faf138c76b80eac1c0ee081e352be2b1ead0eb7331b9509f34fa3dcdfaf              705 main/binary-amd64/Packages.gz
+ 4e0678e4554db9d0f742767897ff4c89ba722bcbd8e79cca444262b933f594c0             1218 main/binary-arm64/Packages
+ e30e808dc60ee24edb40b9f369fae751e286d366c6b1fe4a7b7684d1c199ecc6              705 main/binary-arm64/Packages.gz
 SHA512:
- 137b056e55fc42c0d1c1fcb2ca52ed964f08915bf01bc6d835c01e111f0a787d38c7bfc1c30924e7e1b2c96f9c60e74e827b69a7e6db595674539a71a1ce798e             1218 main/binary-amd64/Packages
- dd502e82661ac37fe961d14ce931617460217c2e4fb8b039bad6c7a86465ffaf6744add8bd19b0d7376a7d5402f3f211b665b687843aed1df76329a5baf29cd3              706 main/binary-amd64/Packages.gz
- 9aba7434aef6980afdd5696518cf59caf057f706799d961b14f7abe6842905cef50926e687404a4b56f323c1a21e1f572472f21bf609a23ac44d533cb56b70c6             1218 main/binary-arm64/Packages
- c460646aab2d052b78726a26820e557a330360c33baa3bfe76945a77733f65bdaee7b35e926c3c4199a87a7b6479800a3ef34548b060911cea3ba703c8f2ecc3              705 main/binary-arm64/Packages.gz
+ 3acac0d9a2b24f1b5c5f66363559b59ebfd0fa95a4a68ca26ef5ee2b728033de9698a23995544651f7a906aa2f27a29ceb10031a5c09351a34e3f2ad7491c26d             1218 main/binary-amd64/Packages
+ eef3bc85dd6eb9acf0d0256b82df1f0f5d1180e9226d3755722a660f91364d62d06bab8beb7d804d3d95ab59c37fd827022d82a0e0e27ce2d4744bd32c0ef37d              705 main/binary-amd64/Packages.gz
+ 7c28665880db9bc2ec3d448229992e702123fa339dd65de00b2a2cf427a3f25c5a4280b4372fa445208e8c99030df02636259272b148ef2ca85f846acedb2ebf             1218 main/binary-arm64/Packages
+ d3bf7a69d71c1bdade7e5ed945f5b45c699965f04ab87a5d699fdfaaa090dc9871222611722ea39ad65853948081344181e318e9c64326fdf1eea3f6f70f704c              705 main/binary-arm64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQQcZ3u0UteuffVCXt/+jnyX25Z2aAUCavDs7wAKCRD+jnyX25Z2
-aHxMAP9NJWOVlQw+IIkWH7ruPTKvbAEcvcRxhQuWomtsdJ1xPgD8DMo8cUHsalbn
-v+1ugeysBjDU/RXllySuG5TCrXZ6Jg4=
-=OO1h
+iHUEARYKAB0WIQQcZ3u0UteuffVCXt/+jnyX25Z2aAUCavEWCwAKCRD+jnyX25Z2
+aPTSAP9UXCcJmeJkdFoPvZCqQq4BkDQenAa8l7iG64Ka4C3R1gEArfLuEpxU+aGK
+3lP53O2DvMZEiwJrcWQ/gsKM/bu3/gs=
+=bDnI
 -----END PGP SIGNATURE-----
